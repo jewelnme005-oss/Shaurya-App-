@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "name": "Project Assistant",
+  "description": "Agent configuration for this GitHub repository",
+  "instructions": "Always follow the project's existing code style. Prioritize writing clean, documented code. Before running scripts, verify dependencies in package.json or requirements.txt.",
+  "permissions": {
+    "terminal": {
+      "allow": true,
+      "requireApproval": true
+    },
+    "fileSystem": {
+      "allowRead": true,
+      "allowWrite": true
+    },
+    "webSearch": {
+      "allow": true
+    }
+  },
+  "context": {
+    "includeFiles": [
+      "README.md"
+    ],
+    "excludeFiles": [
+      "node_modules/**",
+      ".git/**",
+      "dist/**"
+    ]
+  }
+}
